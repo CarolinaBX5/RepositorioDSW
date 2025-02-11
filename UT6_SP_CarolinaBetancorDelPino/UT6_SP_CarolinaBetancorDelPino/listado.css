@@ -1,0 +1,118 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f8e1ff;
+    color: #4a0e4e;
+    line-height: 1.6;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.user-info {
+    background-color: #9b59b6;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    text-align: center;
+    width: 100%;
+    max-width: 300px;
+}
+
+.user-info a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.user-info a:hover {
+    text-decoration: underline;
+}
+
+h1 {
+    text-align: center;
+    color: #8e44ad;
+    margin-bottom: 30px;
+}
+
+#libros {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 600px;
+    gap: 20px;
+}
+
+.libro {
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(142, 68, 173, 0.1);
+    transition: transform 0.3s ease;
+}
+
+.libro:hover {
+    transform: translateY(-5px);
+}
+
+h2 {
+    color: #8e44ad;
+    margin-top: 0;
+}
+
+.fa-star, .fa-star-half-alt {
+    color: #ff69b4;
+}
+
+.far.fa-star {
+    color: #d8b5ff;
+}
+
+button {
+    background-color: #9b59b6;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #8e44ad;
+}
+
+.votar-btn {
+    background-color: #ff69b4;
+}
+
+.votar-btn:hover {
+    background-color: #ff1493;
+}
+
+.borrar-voto-btn {
+    background-color: #d8b5ff;
+    color: #4a0e4e;
+}
+
+.borrar-voto-btn:hover {
+    background-color: #c39bd3;
+}
+
+#estrellas-container {
+    margin-bottom: 10px;
+}
+
+span {
+    color: #8e44ad;
+    font-size: 0.9em;
+}
+
+@media (max-width: 600px) {
+    #libros {
+        width: 90%;
+    }
+}
